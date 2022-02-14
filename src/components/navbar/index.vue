@@ -12,10 +12,10 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+// import { useRouter } from 'vue-router'
 
-const router = useRouter()
-const push = (path: string) => router.push(path)
+// const router = useRouter()
+// const push = (path: string) => router.push(path)
 
 const links = [
   {

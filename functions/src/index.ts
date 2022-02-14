@@ -1,14 +1,14 @@
 import * as functions from "firebase-functions";
 import axios from "axios";
-const cors = require('cors')({origin: true});
-const fl = functions.logger
+import * as cors from "cors";
+const fl = functions.logger;
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
 //
 export const queryCoinMarketCap = functions.region("europe-west3")
-  .https.onRequest((req, res) => {
-		cors(req, res, async () => {
-			try {
+    .https.onRequest((req, res) => {
+      cors({origin: true})(req, res, async () => {
+        try {
 			  fl.info("Hello logs!", {structuredData: true});
 			  // let params = req.query
 			  const price_api = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=NEAR&convert=USD";
@@ -20,8 +20,8 @@ export const queryCoinMarketCap = functions.region("europe-west3")
 			  });
 			  console.log("queryCoinMarketCap res ", result?.data?.data.NEAR);
 			  res.send(result?.data?.data);
-			} catch (e) {
-				console.log("queryCoinMarketCap err: ", e);
-			}
+        } catch (e) {
+          console.log("queryCoinMarketCap err: ", e);
+        }
+      });
     });
-  });

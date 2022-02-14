@@ -9,6 +9,7 @@
     "serve": "vite preview",
 	  "apii": "cd functions & yarn",
 	  "apie": "cd functions & yarn serve",
+	  "apil": "cd functions & yarn lintfix",
 	  "apit": "cd functions & yarn testdev",
 	  "apiw": "cd functions & yarn watch",
 	  "apid": "cd functions & yarn deploy",

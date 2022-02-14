@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
-import { useHelloWorldStore } from '@/store/useHelloWorld'
-
-defineProps<{ msg: string }>()
-
-const helloWorld = useHelloWorldStore()
-
-const addTwo = () => {
-  wea
-  helloWorld.count = helloWorld.count + 2
-}
-
-const route = useRoute()
+// import { useRoute } from 'vue-router'
+// import { useHelloWorldStore } from '@/store/useHelloWorld'
+//
+// defineProps<{ msg: string }>()
+//
+// const helloWorld = useHelloWorldStore()
+//
+// const addTwo = () => {
+//   wea
+//   helloWorld.count = helloWorld.count + 2
+// }
+//
+// const route = useRoute()
 </script>
 
 <template>

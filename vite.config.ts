@@ -11,7 +11,7 @@ export default defineConfig({
 	mode: process.env.NODE_ENV,
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+	    '@/': `${path.resolve(__dirname, 'src')}/`
     }
   },
 	publicDir: 'src/public',

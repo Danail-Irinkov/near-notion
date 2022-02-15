@@ -22,7 +22,8 @@ module.exports = {
     'prettier/prettier': 'warn',
     '@typescript-eslint/no-explicit-any': 'off',
     'vue/attribute-hyphenation': ['off', 'never', { ignore: ['custom-prop'] }],
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off'
   },
   globals: {
     defineProps: 'readonly',

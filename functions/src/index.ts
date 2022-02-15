@@ -6,7 +6,7 @@ const fl = functions.logger;
 // // https://firebase.google.com/docs/functions/typescript
 //
 export const queryCoinMarketCap = functions.region("europe-west3")
-    .https.onRequest((req, res) => {
+    .https.onRequest(async (req, res) => {
       cors({origin: true})(req, res, async () => {
         try {
 			  fl.info("Hello logs!", {structuredData: true});
